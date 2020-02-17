@@ -19,8 +19,8 @@ jobs:
         run: yarn tsc     
       - name: Lint
         run: yarn lint  
-      - name: test
-        run: yarn test
+      # - name: test
+        # run: yarn test
       - name: Audit
         run: |
           npm i --package-lock-onl  
