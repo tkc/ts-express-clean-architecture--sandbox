@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
@@ -16,11 +16,11 @@ jobs:
       - name: dependency
         run: npm install
       - name: Tsc
-        run: npm run tsc     
+        run: yarn tsc     
       - name: Lint
-        run: npm run lint  
-      - name: test
-        run: npm run test
+        run: yarn lint  
+      # - name: test
+        # run: yarn test
       - name: Audit
         run: |
           npm i --package-lock-onl  
