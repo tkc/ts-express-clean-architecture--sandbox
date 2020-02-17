@@ -1,1 +1,1 @@
-# ts-express-clean-architecture--sandbox
+# ts-express-clean-architecture-sandbox
