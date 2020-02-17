@@ -1,0 +1,69 @@
+[
+	{
+		"type": "postgres",
+		"host": "localhost",
+		"port": 5432,
+		"username": "hiroshi",
+		"password": "password",
+		"database": "test",
+		"synchronize": true,
+		"logging": false,
+		"entities": [
+			"src/entity/**/*.ts"
+		],
+		"migrations": [
+			"src/migration/**/*.ts"
+		],
+		"subscribers": [
+			"src/subscriber/**/*.ts"
+		],
+		"cli": {
+			"entitiesDir": "src/entity",
+			"migrationsDir": "src/migration",
+			"subscribersDir": "src/subscriber"
+		}
+	},
+
+	{
+		"name": "seed",
+		"type": "postgres",
+		"host": "localhost",
+		"port": 5432,
+		"username": "test",
+		"password": "test",
+		"database": "test",
+		"synchronize": false,
+		"logging": true,
+		"migrationsTableName": "seed",
+		"entities": [
+			"src/entity/**/*.ts"
+		],
+		"migrations": [
+			"src/seed/**/*.ts"
+		],
+		"cli": {
+			"migrationsDir": "src/seed"
+		}
+	},
+   	{
+      	"name": "mongoseed",
+      	"type": "postgres",
+      	"host": "localhost",
+      	"port": 5432,
+      	"username": "hiroshi",
+      	"password": "password",
+      	"database": "test",
+      	"synchronize": false,
+      	"logging": true,
+      	"migrationsTableName": "mongoseed",
+      	"entities": [
+        	"src/entity/**/*.ts"
+      	],
+      	"migrations": [
+         	"src/mongoseed/**/*.ts"
+      	],
+      	"cli": {
+         	"migrationsDir": "src/mongoseed"
+      	}
+   	}
+]

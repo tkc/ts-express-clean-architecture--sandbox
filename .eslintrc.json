@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "camelcase": [
+      "error",
+      {
+        "ignoreImports": true,
+        "ignoreDestructuring": true,
+        "properties": "never"
+      }
+    ],
+    "@typescript-eslint/camelcase": [
+      "error",
+      {
+        "ignoreImports": true,
+        "ignoreDestructuring": true,
+        "properties": "never"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "quote-props": ["error", "consistent"],
+    "indent": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "singleQuote": false,
+        "semi": true,
+        "useTabs": true,
+        "quoteProps": "consistent"
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": "off",
+    "no-irregular-whitespace": "off"
+  }
+}

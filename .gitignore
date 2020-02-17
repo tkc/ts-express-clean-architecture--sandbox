@@ -1,0 +1,9 @@
+node_modules/
+build/
+tmp/
+temp/
+ormconfig.json
+.env
+log/*.log*
+package-lock.json
+out/
