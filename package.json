@@ -46,7 +46,7 @@
 		"@types/request": "^2.48.3",
 		"@types/sharp": "^0.22.2",
 		"@types/supertest": "^2.0.8",
-		"bcrypt": "^3.0.6",
+		"bcrypt": "^5.0.0",
 		"body-parser": "^1.18.1",
 		"bootstrap": "^4.3.1",
 		"cheerio": "^1.0.0-rc.3",
