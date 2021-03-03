@@ -73,7 +73,7 @@
 		"passport-local": "^1.0.0",
 		"pg": "^7.17.1",
 		"popper.js": "^1.15.0",
-		"pug": "^2.0.3",
+		"pug": "^3.0.1",
 		"reflect-metadata": "^0.1.10",
 		"request": "^2.88.0",
 		"select2": "^4.0.7",
